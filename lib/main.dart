@@ -1,7 +1,5 @@
 import 'package:blood_donation_app/ui/screens/onboarding_auth/splashscreen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 main() {
   runApp(const MainApp());
