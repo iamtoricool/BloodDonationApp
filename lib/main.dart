@@ -1,7 +1,13 @@
-import 'package:blood_donation_app/ui/screens/onboarding_auth/splashscreen.dart';
+import 'package:blood_donation_app/firebase/firebase_options.dart';
+import 'package:blood_donation_app/ui/screens/test_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MainApp());
 }
 
@@ -11,7 +17,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SplashScreen(),
+      home: TestScreen(),
     );
   }
 }
