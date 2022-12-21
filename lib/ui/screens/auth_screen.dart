@@ -1,5 +1,6 @@
 import 'package:blood_donation_app/ui/app_theme/theme_colors.dart';
 import 'package:blood_donation_app/ui/screens/login_screen.dart';
+import 'package:blood_donation_app/ui/screens/register_screen.dart';
 import 'package:blood_donation_app/ui/widget/custom_design.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -51,7 +52,15 @@ class _AuthScreenState extends State<AuthScreen> {
                   isFilled: false,
                   labelText: 'LOG IN'),
               CustomTextButton(
-                  onPressed: () {}, isFilled: true, labelText: 'REGISTER'),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const RegisterScreen(),
+                        ));
+                  },
+                  isFilled: true,
+                  labelText: 'REGISTER'),
               const Spacer(),
             ],
           ),
