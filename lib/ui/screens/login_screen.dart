@@ -1,5 +1,6 @@
 import 'package:blood_donation_app/ui/app_theme/theme_colors.dart';
 import 'package:blood_donation_app/ui/screens/register_screen.dart';
+import 'package:blood_donation_app/ui/screens/reset_password_screen.dart';
 import 'package:blood_donation_app/ui/widget/custom_design.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -61,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               TextButton(
                 onPressed: () {
-                  toast('value');
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const ResetPasswordScreen(),));
                 },
                 style: ButtonStyle(
                     overlayColor: MaterialStateColor.resolveWith(
