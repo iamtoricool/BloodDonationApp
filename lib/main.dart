@@ -1,5 +1,5 @@
 import 'package:blood_donation_app/firebase/firebase_options.dart';
-import 'package:blood_donation_app/ui/screens/Splash%20Screen/splash_screen.dart';
+import 'package:blood_donation_app/ui/Splash%20Screen/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 

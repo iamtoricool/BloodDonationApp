@@ -1,9 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:nb_utils/nb_utils.dart';
 
 import '../../../Constant Data/app_colors.dart';
+import '../Onboarding 3/onbording_3.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  Future<void> goToSlider() async {
+    await Future.delayed(const Duration(seconds: 3))
+        .then((value) => const OnboardingPage3().launch(context));
+  }
+
+  @override
+  void initState() {
+    goToSlider();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
