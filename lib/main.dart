@@ -1,5 +1,5 @@
 import 'package:blood_donation_app/firebase/firebase_options.dart';
-import 'package:blood_donation_app/ui/screens/test_screen.dart';
+import 'package:blood_donation_app/ui/screens/Splash%20Screen/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +17,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: TestScreen(),
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
     );
   }
 }
