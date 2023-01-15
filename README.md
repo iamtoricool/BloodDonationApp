@@ -31,6 +31,8 @@ These instructions will get you a copy of the project up and running on your loc
 - [Flutter](https://flutter.dev/) - A mobile app development framework
 - [Firebase](https://firebase.google.com/) - A backend platform for building web and mobile applications
 
+## UI Design 
+- [Figma UI Design](https://www.figma.com/file/ayZ5ynbSWunExTv6s225hR/Blood-Donation-App?fuid=1118482160783246850)
 ## Contributing
 
 We welcome contributions to this project. If you have an idea for a new feature or have found a bug, please open an issue or submit a pull request.
