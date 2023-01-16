@@ -10,4 +10,5 @@ class ThemeColors {
   static const darkColor = Color(0xff3A4351);
   static const headingColor = Color(0xff272A2F);
   static const paragraphColor = Color(0xff7E7E7E);
+  static const iconsColor = Color(0xffb3b3b3);
 }

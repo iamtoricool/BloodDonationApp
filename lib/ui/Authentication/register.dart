@@ -65,13 +65,14 @@ class _RegisterPageState extends State<RegisterPage> {
                   filled: true,
                   focusColor: Colors.black,
                   fillColor: ThemeColors.greyLighterColor,
-                  prefixIcon: Icon(
+                  labelText: 'Enter Your Name',
+                  prefixIcon: const Icon(
                     Icons.person,
                     color: ThemeColors.primaryColor,
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               AppTextField(
@@ -80,19 +81,20 @@ class _RegisterPageState extends State<RegisterPage> {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5)),
                   enabledBorder:
-                      OutlineInputBorder(borderSide: BorderSide.none),
+                      const OutlineInputBorder(borderSide: BorderSide.none),
                   focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide.none,
                       borderRadius: BorderRadius.circular(5)),
                   filled: true,
                   fillColor: ThemeColors.greyLighterColor,
-                  prefixIcon: Icon(
+                  labelText: 'Enter Email Address',
+                  prefixIcon: const Icon(
                     Icons.email_outlined,
                     color: ThemeColors.primaryColor,
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               AppTextField(
@@ -101,20 +103,21 @@ class _RegisterPageState extends State<RegisterPage> {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5)),
                   enabledBorder:
-                      OutlineInputBorder(borderSide: BorderSide.none),
+                      const OutlineInputBorder(borderSide: BorderSide.none),
                   focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide.none,
                       borderRadius: BorderRadius.circular(5)),
                   filled: true,
                   focusColor: Colors.black,
                   fillColor: ThemeColors.greyLighterColor,
-                  prefixIcon: Icon(
+                  labelText: 'Enter Your Phone Number',
+                  prefixIcon: const Icon(
                     Icons.phone,
                     color: ThemeColors.primaryColor,
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               AppTextField(
@@ -123,19 +126,20 @@ class _RegisterPageState extends State<RegisterPage> {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5)),
                   enabledBorder:
-                      OutlineInputBorder(borderSide: BorderSide.none),
+                      const OutlineInputBorder(borderSide: BorderSide.none),
                   focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide.none,
                       borderRadius: BorderRadius.circular(5)),
                   filled: true,
                   fillColor: ThemeColors.greyLighterColor,
-                  prefixIcon: Icon(
+                  labelText: 'Password',
+                  prefixIcon: const Icon(
                     Icons.lock,
                     color: ThemeColors.primaryColor,
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               AppTextField(
@@ -144,20 +148,21 @@ class _RegisterPageState extends State<RegisterPage> {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5)),
                   enabledBorder:
-                      OutlineInputBorder(borderSide: BorderSide.none),
+                      const OutlineInputBorder(borderSide: BorderSide.none),
                   focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide.none,
                       borderRadius: BorderRadius.circular(5)),
                   filled: true,
                   focusColor: Colors.black,
                   fillColor: ThemeColors.greyLighterColor,
-                  prefixIcon: Icon(
+                  labelText: 'Enter Your Blood Group',
+                  prefixIcon: const Icon(
                     Icons.bloodtype_outlined,
                     color: ThemeColors.primaryColor,
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               AppTextField(
@@ -166,19 +171,20 @@ class _RegisterPageState extends State<RegisterPage> {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5)),
                   enabledBorder:
-                      OutlineInputBorder(borderSide: BorderSide.none),
+                      const OutlineInputBorder(borderSide: BorderSide.none),
                   focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide.none,
                       borderRadius: BorderRadius.circular(5)),
                   filled: true,
                   fillColor: ThemeColors.greyLighterColor,
-                  prefixIcon: Icon(
+                  labelText: 'Enter Your Location',
+                  prefixIcon: const Icon(
                     Icons.location_on_outlined,
                     color: ThemeColors.primaryColor,
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 53,
               ),
               ButtonDecoration(
@@ -187,7 +193,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   onPressed: () {},
                   buttonDecoration: myButtonDecoration.copyWith(
                       color: ThemeColors.primaryColor)),
-              SizedBox(
+              const SizedBox(
                 height: 26,
               ),
               GestureDetector(
@@ -195,7 +201,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   const SignIn().launch(context);
                 },
                 child: RichText(
-                  text: TextSpan(
+                  text: const TextSpan(
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     children: [
                       TextSpan(

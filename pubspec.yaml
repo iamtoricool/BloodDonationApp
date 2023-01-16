@@ -40,6 +40,10 @@ dependencies:
   introduction_screen: ^3.1.1
   nb_utils: ^4.6.25
   url_launcher: ^6.1.7
+  pinput: ^2.2.21
+  curved_nav_bar: ^0.0.2
+
+
 
 dev_dependencies:
   flutter_lints: ^2.0.0

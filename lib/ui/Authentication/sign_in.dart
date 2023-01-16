@@ -1,10 +1,12 @@
 import 'package:blood_donation_app/Constant%20Data/style.dart';
 import 'package:blood_donation_app/Widget/button_global.dart';
+import 'package:blood_donation_app/ui/Authentication/register.dart';
 import 'package:blood_donation_app/ui/Authentication/reset_password.dart';
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../../Constant Data/app_colors.dart';
+import '../Bottom Navigation Bar/bottom_navi_bar.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -66,6 +68,7 @@ class _SignInState extends State<SignIn> {
                   filled: true,
                   focusColor: Colors.black,
                   fillColor: ThemeColors.greyLighterColor,
+                  labelText: 'Enter Email',
                   prefixIcon: const Icon(
                     Icons.email,
                     color: ThemeColors.primaryColor,
@@ -87,19 +90,22 @@ class _SignInState extends State<SignIn> {
                       borderRadius: BorderRadius.circular(5)),
                   filled: true,
                   fillColor: ThemeColors.greyLighterColor,
+                  labelText: 'Password',
                   prefixIcon: const Icon(
                     Icons.lock,
                     color: ThemeColors.primaryColor,
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               ButtonDecoration(
                 title: 'LOG IN',
                 buttonTextColor: ThemeColors.whiteColor,
-                onPressed: () {},
+                onPressed: () {
+                  BottomNavigationBar1().launch(context, isNewTask: true);
+                },
                 buttonDecoration: myButtonDecoration.copyWith(
                     color: ThemeColors.primaryColor),
               ),
@@ -119,18 +125,22 @@ class _SignInState extends State<SignIn> {
               const SizedBox(
                 height: 125,
               ),
-              RichText(
-                text: const TextSpan(style: TextStyle(fontSize: 18), children: [
-                  TextSpan(
-                    text: 'Don’t have an account?',
-                    style: TextStyle(color: ThemeColors.paragraphColor),
-                  ),
-                  TextSpan(
-                    text: 'Register Now',
-                    style: TextStyle(color: ThemeColors.primaryColor),
-                  ),
-                ]),
-              )
+              GestureDetector(
+                onTap: () => const RegisterPage().launch(context),
+                child: RichText(
+                  text:
+                      const TextSpan(style: TextStyle(fontSize: 18), children: [
+                    TextSpan(
+                      text: 'Don’t have an account?',
+                      style: TextStyle(color: ThemeColors.paragraphColor),
+                    ),
+                    TextSpan(
+                      text: 'Register Now',
+                      style: TextStyle(color: ThemeColors.primaryColor),
+                    ),
+                  ]),
+                ),
+              ),
             ],
           ),
         ),
