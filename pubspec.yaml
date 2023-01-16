@@ -42,6 +42,7 @@ dependencies:
   url_launcher: ^6.1.7
   pinput: ^2.2.21
   curved_nav_bar: ^0.0.2
+  carousel_slider: ^4.2.1
 
 
 
