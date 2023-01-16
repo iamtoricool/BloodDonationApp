@@ -1,7 +1,7 @@
 import 'package:blood_donation_app/firebase/firebase_options.dart';
-import 'package:blood_donation_app/ui/screens/splashscreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'ui/screens/auth_&_welcome_screen/splashscreen.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
